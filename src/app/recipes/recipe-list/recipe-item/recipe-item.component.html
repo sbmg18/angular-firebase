@@ -1,0 +1,9 @@
+<ng-template [ngIf]="recipe != null">
+  <a [routerLink]="[index]" routerLinkActive="active" class="list-group-item">
+    <span class="pull-right">
+        <img [src]="recipe.imagePath" width="55" height="48" [alt]="recipe.name">
+    </span>
+    <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+    <p class="list-group-item-text">{{recipe.description}}</p>
+  </a>
+</ng-template>
